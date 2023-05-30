@@ -35,9 +35,9 @@ app.use('/auth', auth)
 
 // app.use(express.static(path.join(__dirname, "../bike-reservation/build")));
 
-// app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "../bike-reservation/build/index.html"));
-// });
+app.get("/BEProject", (req, res) => {
+    res.send({ message: "server is working" })
+});
 
 app.use(errorMiddleware)
 
