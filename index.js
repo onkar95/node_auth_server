@@ -35,7 +35,7 @@ app.use('/auth', auth)
 
 // app.use(express.static(path.join(__dirname, "../bike-reservation/build")));
 
-app.get("/BEProject", (req, res) => {
+app.get("/", (req, res) => {
     res.send({ message: "server is working" })
 });
 
